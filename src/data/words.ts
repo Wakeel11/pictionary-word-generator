@@ -1,0 +1,122 @@
+export interface Word {
+  text: string;
+  difficulty: 'Easy' | 'Medium' | 'Hard' | 'Very Hard';
+  category: 'Animals' | 'Movies' | 'Objects' | 'Actions' | 'Places';
+}
+
+export const PICTIONARY_WORDS: Word[] = [
+  // Easy - Animals
+  { text: 'Cat', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Dog', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Elephant', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Giraffe', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Lion', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Snake', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Bird', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Fish', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Rabbit', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Monkey', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Cow', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Pig', difficulty: 'Easy', category: 'Animals' },
+  { text: 'Shark', difficulty: 'Easy', category: 'Animals' },
+
+  // Easy - Objects
+  { text: 'Chair', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Table', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Pencil', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Book', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Phone', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Cup', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Spoon', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Bed', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Door', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Window', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Sock', difficulty: 'Easy', category: 'Objects' },
+  { text: 'House', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Egg', difficulty: 'Easy', category: 'Objects' },
+  { text: 'Pizza', difficulty: 'Easy', category: 'Objects' },
+
+  // Medium - Actions
+  { text: 'Swimming', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Dancing', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Cooking', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Climbing', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Painting', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Sleeping', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Running', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Singing', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Driving', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Fishing', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Bicycling', difficulty: 'Medium', category: 'Actions' },
+  { text: 'Jumping', difficulty: 'Medium', category: 'Actions' },
+
+  // Medium - Places
+  { text: 'Beach', difficulty: 'Medium', category: 'Places' },
+  { text: 'Park', difficulty: 'Medium', category: 'Places' },
+  { text: 'School', difficulty: 'Medium', category: 'Places' },
+  { text: 'Hospital', difficulty: 'Medium', category: 'Places' },
+  { text: 'Airport', difficulty: 'Medium', category: 'Places' },
+  { text: 'Cinema', difficulty: 'Medium', category: 'Places' },
+  { text: 'Library', difficulty: 'Medium', category: 'Places' },
+  { text: 'Forest', difficulty: 'Medium', category: 'Places' },
+  { text: 'Desert', difficulty: 'Medium', category: 'Places' },
+  { text: 'Mountain', difficulty: 'Medium', category: 'Places' },
+  { text: 'Paris', difficulty: 'Medium', category: 'Places' },
+  { text: 'Farm', difficulty: 'Medium', category: 'Places' },
+
+  // Hard - Movies
+  { text: 'Inception', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Titanic', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Avatar', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Gladiator', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Jaws', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Frozen', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Matrix', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Star Wars', difficulty: 'Hard', category: 'Movies' },
+  { text: 'The Lion King', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Jurassic Park', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Shrek', difficulty: 'Hard', category: 'Movies' },
+  { text: 'Harry Potter', difficulty: 'Hard', category: 'Movies' },
+
+  // Hard - Objects
+  { text: 'Microscope', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Telescope', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Compass', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Saxophone', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Typewriter', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Hourglass', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Chandelier', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Hammock', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Stethoscope', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Unicycle', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Dictionary', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Sunscreen', difficulty: 'Hard', category: 'Objects' },
+  { text: 'Calendar', difficulty: 'Hard', category: 'Objects' },
+
+  // Very Hard - Actions
+  { text: 'Daydreaming', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Procrastinating', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Meditating', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Teleporting', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Eavesdropping', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Gargling', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Whistling', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Juggling', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Knitting', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Sculpting', difficulty: 'Very Hard', category: 'Actions' },
+  { text: 'Applause', difficulty: 'Very Hard', category: 'Actions' },
+
+  // Very Hard - Places
+  { text: 'Outer Space', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Bermuda Triangle', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Mount Everest', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Great Wall of China', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Grand Canyon', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Amazon Rainforest', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Eiffel Tower', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Colosseum', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Stonehenge', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Antarctica', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Statue of Liberty', difficulty: 'Very Hard', category: 'Places' },
+  { text: 'Pyramids', difficulty: 'Very Hard', category: 'Places' },
+];
